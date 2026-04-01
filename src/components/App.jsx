@@ -14,13 +14,15 @@ const App = ({ data }) => {
       </div>
       <div>
         {data.map((item) => {
-          <Card
-            key={item.id}
-            title={item.title}
-            description={item.description}
-            icon={item.icon}
-            variant={item.variant}
-          />;
+          return (
+            <Card
+              key={item.id}
+              title={item.title}
+              description={item.description}
+              icon={item.icon}
+              variant={item.variant}
+            />
+          );
         })}
       </div>
     </main>
